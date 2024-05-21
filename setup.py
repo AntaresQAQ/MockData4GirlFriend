@@ -4,4 +4,5 @@ setuptools.setup(
     name="exp_utils",
     version="1.0.0",
     author="Antares",
+    packages=["exp_utils"],
 )
