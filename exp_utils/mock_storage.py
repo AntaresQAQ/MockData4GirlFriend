@@ -24,7 +24,8 @@ class ExpDataStorage:
             for x, y in self.get_all_points():
                 f.write(f"{x}\t{y}\n")
                 
-    def print_all_points(self):
+    def print_all_points(self, end="\n"):
         print(f"{self.name} points:")
         for x, y in self.get_all_points():
             print(f"({x}, {y})")
+        print(end=end)
