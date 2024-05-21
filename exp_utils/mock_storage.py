@@ -8,7 +8,7 @@ class ExpDataStorage:
         self.name = name
         self.mock = mock_funcs.get(self.name)
         
-    def add_point(self, x: float, y: float):
+    def add_point(self, x, y):
         if self.mock:
             y = self.mock(x, y)
         self.storage.append((x, y))
@@ -27,4 +27,3 @@ class ExpDataStorage:
     def print_all_points(self):
         for x, y in self.get_all_points():
             print(f"({x}, {y})")
-        
