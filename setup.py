@@ -1,8 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="mock-data-utils",
+    name="exp-data-storage",
     version="1.0.0",
     author="Antares",
-    url="https://github.com/facebookresearch/jacobian_regularizer",
 )
